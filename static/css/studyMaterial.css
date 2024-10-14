@@ -1,0 +1,27 @@
+.hero{
+    background-color: var(--secondary-color4);
+    font-family: Arial, sans-serif;
+    height: fit-content;
+    padding: 5vh 5vh;
+    text-align: center;
+    margin: 30vh 20vh 0 20vh;
+    border-radius: 10px;
+}
+
+@media (max-width:600px) {
+    .hero{
+        margin: 20vh 2vh;
+    }
+}
+
+.goBack{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.goBack h4{
+    color: var(--secondary-color25);
+    padding: 2vh 0 3vh 0;
+}
