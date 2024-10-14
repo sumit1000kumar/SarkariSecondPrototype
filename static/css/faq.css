@@ -13,7 +13,7 @@ body {
 h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: var(--secondary-color24);
+    color: var(--primaryColor);
 }
 .faq-type {
     margin-top: 30px;
@@ -46,7 +46,7 @@ h2 {
 .faq-answer {
     display: none;
     padding: 15px;
-    background-color: var(--secondary-color13);
+    background-color: var(--textColor);
     color: #e8e1e1;
 }
 .faq-item.active .faq-answer {

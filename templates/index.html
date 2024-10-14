@@ -76,7 +76,7 @@
 </head>
 <body>
     <header>
-        <div class="topbar">
+        <!-- <div class="topbar">
           <marquee behavior="scroll" direction="" style="color: #2f1d6b;">No. 1 website to get <span class="topspan">exam updates</span> and <span class="topspan">schemes info.</span><span style="color: transparent;">....................................................</span><span style="color: #2f1d6b; font-weight: 100;">Navigate Your Future </span>– Free Govt Exam Resources at Your Fingertips!</marquee>
           <ul>
             <li><a href="#" class="fa fa-facebook"></a></li>
@@ -84,11 +84,17 @@
             <li><a href="#" class="fa fa-youtube"></a></li>
             <li><a href="#" class="fa fa-instagram"></a></li>
           </ul>
+        </div> -->
+
+        <div class="topbar">
+            <p>Check out the exam dates here!! </p>
+            <button>Exam Calendar</button>
         </div>
         <nav class="navbar">
           <div class="logoRegister">
+            
             <!-- <h1 id="logotext"><a href="https://www.sarkariexamjankari.in/">Sarkari_<span style="color: red;">E</span>xam</a></h1> -->
-             <img src="/static/images/logo/LogoNew2Cropped.png" alt="WebsiteLogo" >
+             <img src="/static/images/logo/LogoNew4.png" alt="WebsiteLogo" style="height: 60px;" >
             <button id="registerBtnMob">
               <a href="#">Register</a>
             </button>
@@ -96,7 +102,7 @@
           <hr id="navSeperator">
           <div class="navbarMobileContent">
             <ul>
-              <li class="navbarLinks"><a href="/index.html">Home</a></li>
+              <!-- <li class="navbarLinks"><a href="/index.html">Home</a></li> -->
               <li class="navbarLinks"><a href="/allexams.html">Exams</a></li>
               <li class="navbarLinks" style="text-align: center;"><a href="studyMaterial.html">Study Material</a></li>
               <li class="navbarLinks"><a href="/schemes.html">Schemes</a></li>
@@ -104,9 +110,11 @@
               <li class="navbarLinks"><a href="#">Syllabus</a></li>
             </ul>
           </div>
+
+          <!-- for laptop screens -->
           <div class="navContent">
             <ul>
-              <li class="navbarLinks"><a href="/index.html">Home</a></li>
+              <!-- <li class="navbarLinks"><a href="/index.html">Home</a></li> -->
               <li class="navbarLinks"><a href="/allexams.html">Exams </a></li>
               <li class="navbarLinks"><a href="/studyMaterial.html">Study Material</a></li>
               <li class="navbarLinks"><a href="/schemes.html">Schemes</a></li>
@@ -115,49 +123,54 @@
               <!-- <li class="navbarLinks"><a href="#">Support</a></li> -->
             </ul>
           </div>
-          <button>
-            <a href="#">Register</a>
-          </button>
+
+          <div class="header__icon-list">
+              <div class="searchbar">
+                  <input type="search">
+                  <i class="fa-brands fa-searchengin" style="color: var(--primaryColor); font-size: 1.3vw;"></i>  
+              </div>
+              <i class="fa-regular fa-user" id="profileIcon"></i>
+          </div>
         </nav>
       </header>
       
     <main>
 
         <section class="hero">
-
+            <img src="/static/images/heroTrial.webp" alt="heroImg">
         </section>
 
         <section class="popularExams">
             <h1 class="heading" style="font-size: 2vw;">Popular Exams</h1>
             <div class="containerWrapper">
                 <div class="ExamContainer">
-                    <img src="/static/images/dummyImg.webp" alt="ExamCategoryImg">
+                    <img src="/static/images/defenceExamImg-removebg-preview.png" alt="ExamCategoryImg" >
                     <p>Defence Exams</p>
                 </div>
-
                 <div class="ExamContainer">
-                    <img src="/static/images/dummyImg.webp" alt="ExamCategoryImg">
-                    <p>Exam Name</p>
+                    <img src="/static/images/RailwaysExamLogo-removebg-preview.png" alt="ExamCategoryImg">
+                    <br>
+                    <p>Railway Exam</p>
                 </div>
 
                 <div class="ExamContainer">
-                    <img src="/static/images/dummyImg.webp" alt="ExamCategoryImg">
-                    <p>Exam Name</p>
+                    <img src="https://3.imimg.com/data3/KV/NL/MY-14548641/bank-exams.png" alt="ExamCategoryImg" height="90">
+                    <p>Banking Exam</p>
                 </div>
 
                 <div class="ExamContainer">
-                    <img src="/static/images/dummyImg.webp" alt="ExamCategoryImg">
-                    <p>Exam Name</p>
+                    <img src="https://w7.pngwing.com/pngs/381/126/png-transparent-scc-staff-selection-commission-logo-thumbnail.png" alt="ExamCategoryImg">
+                    <p>SSC Exam</p>
                 </div>
 
                 <div class="ExamContainer">
-                    <img src="/static/images/dummyImg.webp" alt="ExamCategoryImg">
-                    <p>Exam Name</p>
+                    <img src="https://aucfinder.com/za/wp-content/uploads/2022/09/Technical-Science.jpg">
+                    <p>Technical Exam</p>
                 </div>
 
                 <div class="ExamContainer">
-                    <img src="/static/images/dummyImg.webp" alt="ExamCategoryImg">
-                    <p>Exam Name</p>
+                    <img src="https://talepost.com/wp-content/uploads/2017/10/chinmaya-blog-1280x720-1-1068x601.jpg" alt="ExamCategoryImg">
+                    <p>UPSC Exam</p>
                 </div>
 
                 <div class="ExamContainer">
@@ -174,6 +187,29 @@
             </aside> -->
             
             <section class="centertables">
+                <div class="syllabus">
+                    <h1>Recently Updated Links</h1>
+                    <div class="scroll-container">
+                        <ul class="scrolling-list">
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                            <li><a href="#"> <span class="bulleticon"><></span> Dummy</a></li>
+                        </ul>
+                    </div>
+                    <button class="viewMoreBtn"><a href="/assets/centerTables/syllabus.html">More Links here..</a></button>
+                </div>
+                
                 <div class="latestExams">
                     <h1>Latest Exams</h1>
                     <ul>
@@ -197,7 +233,7 @@
                     <li><a href="/exams/dvc.html"> <span class="bulleticon"><></span> Damodar Valley Corporation DVC Junior Engineer JE</a></li>
                     
                 </ul>
-                <button class="viewMoreBtn"><a href="/assets/centerTables/latestExams.html">More forms here..</a></button>
+                <button class="viewMoreBtn"><a href="/assets/centerTables/latestExams.html">More Links here..</a></button>
 
             </div>
             <div class="admitCards">
@@ -220,7 +256,7 @@
                     <li><a href=""> <span class="bulleticon"><></span> Army 10+2 TES 52 Online Form 2024</a></li> -->
                     
                 </ul>
-                <button class="viewMoreBtn"><a href="/assets/centerTables/admitCards.html">More forms here..</a></button>
+                <button class="viewMoreBtn"><a href="/assets/centerTables/admitCards.html">More Links here..</a></button>
 
             </div>
             <div class="results">
@@ -242,7 +278,7 @@
                     <li><a href=""> <span class="bulleticon"><></span> UPSC NDA II Online Form 2024</a></li>
                  -->
                 </ul>
-                <button class="viewMoreBtn"><a href="/assets/centerTables/results.html">More forms here..</a></button>
+                <button class="viewMoreBtn"><a href="/assets/centerTables/results.html">More Links here..</a></button>
             </div>
 
             <div class="answerKeys">
@@ -257,7 +293,7 @@
                     <li><a href=""> <span class="bulleticon"><></span> Railway RPF Constable / Sub Inspector Correction / Edit Form 2024, Fee Payment Date Extended</a></li> -->
                 
                 </ul>
-                <button class="viewMoreBtn"><a href="/assets/centerTables/answerKeys.html">More forms here..</a></button>
+                <button class="viewMoreBtn"><a href="/assets/centerTables/answerKeys.html">More Links here..</a></button>
             </div>
 
         <div class="syllabus">
@@ -273,34 +309,19 @@
                 <li><a href=""> <span class="bulleticon"><></span> UPSC CDS II Online Form 2024</a></li> -->
             
             </ul>
-            <button class="viewMoreBtn"><a href="/assets/centerTables/syllabus.html">More forms here..</a></button>
+            <button class="viewMoreBtn"><a href="/assets/centerTables/syllabus.html">More Links here..</a></button>
         </div>
 
-        <div class="syllabus">
-            <h1>Syllabus</h1>
-            <ul>
-                <!-- <li><a href="#"> <span class="bulleticon"><></span> NVS Non Teaching Various Post Correction / Edit Form 2024</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> Railway RPF Constable / Sub Inspector Correction / Edit Form 2024, Fee Payment Date Extended</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> UPSC CDS II Online Form 2024</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> UPSC NDA II Online Form 2024</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> Army 10+2 TES 52 Online Form 2024</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> NVS Non Teaching Various Post Correction / Edit Form 2024</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> Railway RPF Constable / Sub Inspector Correction / Edit Form 2024, Fee Payment Date Extended</a></li>
-                <li><a href=""> <span class="bulleticon"><></span> UPSC CDS II Online Form 2024</a></li> -->
-            
-            </ul>
-            <button class="viewMoreBtn"><a href="/assets/centerTables/syllabus.html">More forms here..</a></button>
-        </div>
         </section>
 
         <section class="whyChooseUs">
-            <h1 class="heading" style="text-align: center; margin-bottom: 20px; color: var(--secondary-color24);">Why Sarkari Exam Jankari is the best place for job seekers?</h1>
+            <h1 class="heading" style="text-align: center; margin-bottom: 20px; color: var(--primaryColor);">Why Sarkari Exam Jankari is the best place for job seekers?</h1>
 
             <p>SarkariExamJankari.in is the best place for job seekers because we provide:</p>
 
             <div class="whyChooseUsContent">
                 <div class="whyChooseUsImg">
-                    <img src="/assets/images/boy_sej-removebg-preview.png" alt="img">
+                    <img src="/static/images/boy_sej-removebg-preview.png" alt="img">
                 </div>
                 <div class="whyChooseUsText">
                     <ul>
@@ -460,15 +481,13 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="/assets/js/bottomToTop.js"></script>
+    <script src="/static/js/bottomToTop.js"></script>
 
-    <script src="/assets/js/sideicon.js"></script>
+    <script src="/static/js/sideicon.js"></script>
     
-    <script src="/assets/js/faq.js"></script>
+    <script src="/static/js/faq.js"></script>
 
-    <script src="/assets/js/slider.js"></script>
+    <script src="/static/js/slider.js"></script>
 
-    
-    
 </body>
 </html>
