@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SarkariExamJankari - Exam Page</title>
+    
+</head>
+
+<body>
+    <link rel="stylesheet" href="/static/css/exam.css">
+    <header>
+        <!-- <div class="topbar">
+          <marquee behavior="scroll" direction="" style="color: #2f1d6b;">No. 1 website to get <span class="topspan">exam updates</span> and <span class="topspan">schemes info.</span><span style="color: transparent;">....................................................</span><span style="color: #2f1d6b; font-weight: 100;">Navigate Your Future </span>– Free Govt Exam Resources at Your Fingertips!</marquee>
+          <ul>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-youtube"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+          </ul>
+        </div> -->
+
+        <div class="topbar">
+            <p>Check out the exam dates here!! </p>
+            <button>Exam Calendar</button>
+        </div>
+        <nav class="navbar">
+          <div class="logoRegister">
+            
+            <!-- <h1 id="logotext"><a href="https://www.sarkariexamjankari.in/">Sarkari_<span style="color: red;">E</span>xam</a></h1> -->
+            <img src="/static/images/logo/LogoNew4.png" alt="WebsiteLogo" style="height: 60px;">
+            <button id="registerBtnMob">
+              <a href="#">Register</a>
+            </button>
+          </div>
+          <hr id="navSeperator">
+          <div class="navbarMobileContent">
+            <ul>
+              <!-- <li class="navbarLinks"><a href="/index.html">Home</a></li> -->
+              <li class="navbarLinks"><a href="/allexams.html">Exams</a></li>
+              <li class="navbarLinks" style="text-align: center;"><a href="studyMaterial.html">Study Material</a></li>
+              <li class="navbarLinks"><a href="/schemes.html">Schemes</a></li>
+              <!-- <li class="navbarLinks"><a href="#">Blogs</a></li> -->
+              <li class="navbarLinks"><a href="#">Syllabus</a></li>
+            </ul>
+          </div>
+
+          <!-- for laptop screens -->
+          <div class="navContent">
+            <ul>
+              <!-- <li class="navbarLinks"><a href="/index.html">Home</a></li> -->
+              <li class="navbarLinks"><a href="/allexams.html">Exams </a></li>
+              <li class="navbarLinks"><a href="/studyMaterial.html">Study Material</a></li>
+              <li class="navbarLinks"><a href="/schemes.html">Schemes</a></li>
+              <!-- <li class="navbarLinks"><a href="#">Blogs</a></li> -->
+              <li class="navbarLinks"><a href="#">Syllabus</a></li>
+              <!-- <li class="navbarLinks"><a href="#">Support</a></li> -->
+            </ul>
+          </div>
+
+          <div class="header__icon-list">
+              <div class="searchbar">
+                  <input type="search">
+                  <i class="fa-brands fa-searchengin" style="color: var(--primaryColor); font-size: 1.3vw;"></i>  
+              </div>
+              <i class="fa-regular fa-user" id="profileIcon"></i>
+          </div>
+        </nav>
+      </header>
+
+<div>
+    <!-- Icon library -->
+    <link rel="preload" href="https://kit.fontawesome.com/3c8b61f835.js" as="script">
+    <script defer src="https://kit.fontawesome.com/3c8b61f835.js"></script>
+    
+</head>
+<body>
+    <h2>Search for Exams with Ease!</h2>
+
+<div class="dropdown-container">
+  <!-- Statewise Exams Dropdown with Search -->
+  <div class="dropdown">
+      <input type="text" id="stateSearch" placeholder="Search Statewise Exams" onkeyup="filterDropdown('stateDropdown', 'stateSearch')" />
+      <div id="stateDropdown" class="dropdown-content">
+          <a href="state_exam.html">Maharashtra</a>
+          <a href="state_exam.html">Andhra Pradesh</a>
+          <a href="state_exam.html">Haryana</a>
+          <a href="state_exam.html">Uttar Pradesh</a>
+          <a href="state_exam.html">Bihar</a>
+          <a href="state_exam.html">Jharkhand</a>
+          <a href="state_exam.html">Karnataka</a>
+          <a href="state_exam.html">Manipur</a>
+          <a href="state_exam.html">Sikkim</a>
+          <a href="state_exam.html">Arunachal Pradesh</a>
+          <a href="state_exam.html">Himachal Pradesh</a>
+          <a href="state_exam.html">Meghalaya</a>
+          <a href="state_exam.html">Tamil Nadu</a>
+          <a href="state_exam.html">Assam</a>
+          <a href="state_exam.html">Mizoram</a>
+          <a href="state_exam.html">Telangana</a>
+      </div>
+  </div>
+
+  <!-- National Exams Dropdown with Search -->
+  <div class="dropdown">
+      <input type="text" id="nationalSearch" placeholder="Search National Exams" onkeyup="filterDropdown('nationalDropdown', 'nationalSearch')" />
+      <div id="nationalDropdown" class="dropdown-content">
+          <a href="national-exams.html?exam=UPSC">UPSC</a>
+          <a href="national-exams.html?exam=NDA">NDA</a>
+          <a href="national-exams.html?exam=CDS">CDS</a>
+          <a href="national-exams.html?exam=JEE">JEE</a>
+          <a href="national-exams.html?exam=JEEAdvance">JEE Advance</a>
+          <a href="national-exams.html?exam=BITSAT">BITSAT</a>
+          <a href="national-exams.html?exam=NEET">NEET</a>
+          <a href="national-exams.html?exam=NATA">NATA</a>
+          <a href="national-exams.html?exam=CLAT">CLAT</a>
+          <a href="national-exams.html?exam=AILET">AILET</a>
+          <a href="national-exams.html?exam=NIFT">NIFT Entrance</a>
+      </div>
+  </div>
+</div>
+
+<div class="categories-container">
+    <div class="category-box">
+        <h3>Engineering Exams</h3>
+        <p>Explore top engineering exams like JEE, BITSAT, and more.</p>
+        <a href="engineering-exams.html">View Details</a>
+    </div>
+    <div class="category-box">
+        <h3>Medical Exams</h3>
+        <p>Find information on NEET, AIIMS, and other medical exams.</p>
+        <a href="medical-exams.html">View Details</a>
+    </div>
+    <div class="category-box">
+        <h3>Law Exams</h3>
+        <p>Discover CLAT, AILET, and other law entrance exams.</p>
+        <a href="law-exams.html">View Details</a>
+    </div>
+    <div class="category-box">
+        <h3>Defence Exams</h3>
+        <p>Prepare for NDA, CDS, and other defense exams.</p>
+        <a href="defence-exams.html">View Details</a>
+    </div>
+    <div class="category-box">
+        <h3>Banking Exams</h3>
+        <p>Find IBPS, SBI PO, and other banking exam details.</p>
+        <a href="banking-exams.html">View Details</a>
+    </div>
+    <div class="category-box">
+        <h3>Government Exams</h3>
+        <p>Learn about UPSC, SSC, and various government exams.</p>
+        <a href="government-exams.html">View Details</a>
+    </div>
+</div>
+
+
+
+
+<footer>
+    <div class="footContainer">
+        <div class="footcol">
+            <h3>About SarkariExamJankari.in</h3>
+            <p><a href="https://www.sarkariexamjankari.in/" style="text-decoration: none; color: var(--secondary-color4);">SarkariExamJankari.in</a>  is your go-to source for all exam updates, including upcoming exams, admit cards, results, and more.</p>
+            <p><span style="color: var(--secondary-color4);">Navigate Your Future</span>  – Free Govt Exam Resources at Your Fingertips!</p>
+            
+        </div>
+        <div class="footcol">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/allexams.html"> Exams</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/studyMaterial.html"> Study Material</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/schemes.html"> Schemes</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/faq.html"> FAQs</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="#"> Tools</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/contact.html"> Support</a></li>
+            </ul>
+        </div>
+        <div class="footcol">
+            <h3>Trending Exams</h3>
+            <ul>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/cds2.html">CDS</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/cgl.html">SSC CGL</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/chsl.html">SSC CHSL</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="#">SSC GD</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/indian-coast-guard-2024.html">ICG</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="#">UPSC</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="#">BSF</a></li>
+            </ul>
+        </div>
+        <div class="footcol">
+            <h3>Show Some Love</h3>
+            <br>
+            <h5>Follow us on:</h5>
+            <div class="footsocial">
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+            <br>
+            <p><i class="fa-regular fa-envelope" style="color: aliceblue;"></i><a href="mailto:sarkariexamjankari2024@gmail.com" id="footmail"> support@sarkariexamjankari.in</a></p>
+            
+            
+        </div>
+    </div>
+</footer>
+
+<script> 
+  // Function to filter dropdown content based on search input
+  const filterDropdown = (dropdownId, searchId) => {
+      // Get the search input value in uppercase
+      const input = document.getElementById(searchId).value.toUpperCase();
+      // Select all anchor tags inside the specified dropdown
+      const dropdownItems = document.querySelectorAll(`#${dropdownId} a`);
+
+      // Loop through each item and toggle its display based on search match
+      dropdownItems.forEach((item) => {
+          const text = item.textContent.toUpperCase(); 
+          item.style.display = text.includes(input) ? "" : "none";
+      });
+  };
+</script>
+
+
+</body>
+</html>
