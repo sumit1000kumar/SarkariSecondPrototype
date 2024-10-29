@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login : SarkariExamJankari.in</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+</head>
+<body>
+   <main>
+    <div class="logContainer">
+      <img src="/static/images/logo/logoCircular-removebg-preview.png" alt="Logo" id="formImg">
+      <h1>Welcome Back!</h1>
+      <form action=""  id="loginForm">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" required>
+        <button type="submit">Log In</button>
+        <p>New to <a href="index.html" style="text-decoration: none;">SarkariExamJankari</a>? <a href="register.html" style="color: aqua; text-decoration: none;">Sign_Up!</a></p>
+      </form>
+    </div>
+   </main>
+
+   <!-- firebase setup -->
+   <script type="module">
+    // Import Firebase functions
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js";
+    import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
+  
+    // Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyClajnX5enKviIFlgo4Wxxtmuu911lGW7Y",
+      authDomain: "sarkariexamjankariprototype2.firebaseapp.com",
+      projectId: "sarkariexamjankariprototype2",
+      storageBucket: "sarkariexamjankariprototype2.appspot.com",
+      messagingSenderId: "841665987622",
+      appId: "1:841665987622:web:ddbd00ec08548806b5d2e7",
+      measurementId: "G-6JDZXMKHCS"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getFirestore(app);
+  
+    // Registration Function
+    async function registerUser(event) {
+      event.preventDefault(); // Prevent form from submitting normally
+  
+      const firstName = document.getElementById("firstName").value;
+      const lastName = document.getElementById("lastName").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const password = document.getElementById("password").value;
+  
+      try {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+        console.log("User registered:", userCredential.user);
+  
+        // Optionally, save user data to Firestore
+        await addDoc(collection(db, "users"), {
+          uid: userCredential.user.uid,
+          firstName: firstName,
+          lastName: lastName,
+          email: email,
+          phone: phone
+        });
+  
+        alert("Registration successful!");
+        window.location.href = "login.html"; // Redirect to login page
+      } catch (error) {
+        console.error("Error registering user:", error.message);
+        alert(error.message);
+      }
+    }
+  
+    // Login Function
+    async function loginUser(event) {
+      event.preventDefault();
+  
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+  
+      try {
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
+        console.log("User logged in:", userCredential.user);
+        alert("Login successful!");
+        window.location.href = "dashboard.html"; // Redirect to the dashboard or home page
+      } catch (error) {
+        console.error("Error logging in:", error.message);
+        alert(error.message);
+      }
+    }
+  
+    // Attach Event Listeners to Forms
+    document.querySelector("#registerForm").addEventListener("submit", registerUser);
+    document.querySelector("#loginForm").addEventListener("submit", loginUser);
+  </script>
+  
+</body>
+</html>

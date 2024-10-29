@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(222, 218, 218);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.logContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    padding: 2vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: fit-content;
+    margin: 15vh auto;
+    background-color: rgb(55, 52, 52);
+}
+
+.logContainer img{
+    width: 9vw;
+    border-radius: 50%;
+    margin: 0;
+}
+img, label, input, button, p{
+    padding: 1vh 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1vh 0;
+}
+
+form input{
+    border-radius: 5px;
+}
+
+
+.logContainer form input{
+    border-radius: 5px;
+    padding: 1vh 1vw;
+    color: black;
+}
+
+
+form input:hover{
+    background-color: #e0e0e0;
+}
+form button{
+    padding: 2vh;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
+    margin: 2vh 0;
+}
+
+form button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#resetPassword{
+    display: inline;
+    align-self: flex-end;
+    font-size: 2vh;
+}
+
+
+#resetPassword a{
+
+    text-decoration: none;
+}

@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(222, 218, 218);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.registerContainer{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: fit-content;
+    padding: 2vw 4vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    max-width: fit-content;
+    margin: 5vh auto;
+    background-color: rgb(55, 52, 52);
+}
+
+.registerContainer img{
+    display: grid;
+    place-self: center;
+    width: 9vw;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.registerContainer h1{
+    text-align: center;
+}
+.registerContainer img, label, input, button, p{
+    padding: 1vh 0;
+}
+.registerContainer form{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 0;
+}
+ 
+.registerContainer form input{
+    border-radius: 5px;
+    padding: 1vh 1vw;
+    color: black;
+}
+
+.registerContainer form input:hover{
+    background-color: #e0e0e0;
+}
+
+.registerContainer .nameInput{
+    display: flex;
+    gap: 1vw;
+}
+
+.nameInput input{
+    padding: 1vh 1vw;
+}
+.registerContainer form button{
+    padding: 2vh;
+    background-color: orangered;
+    border-radius: 5px;
+    border: none;
+    margin: 2vh 0;
+}
+
+.registerContainer form button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+
+.registerContainer #resetPassword{
+    display: inline;
+    align-self: flex-end;
+    font-size: 2vh;
+}
+
+
+.registerContainer #resetPassword a{
+    text-decoration: none;
+}
