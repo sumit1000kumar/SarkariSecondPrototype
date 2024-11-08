@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SarkariExamJankari - Exam Page</title>
+    <link rel="stylesheet" href="static\css\scheme.css">
+</head>
+
+
+<body>
+    <header>
+        <!-- <div class="topbar">
+          <marquee behavior="scroll" direction="" style="color: #2f1d6b;">No. 1 website to get <span class="topspan">exam updates</span> and <span class="topspan">schemes info.</span><span style="color: transparent;">....................................................</span><span style="color: #2f1d6b; font-weight: 100;">Navigate Your Future </span>– Free Govt Exam Resources at Your Fingertips!</marquee>
+          <ul>
+            <li><a href="#" class="fa fa-facebook"></a></li>
+            <li><a href="#" class="fa fa-twitter"></a></li>
+            <li><a href="#" class="fa fa-youtube"></a></li>
+            <li><a href="#" class="fa fa-instagram"></a></li>
+          </ul>
+        </div> -->
+
+        <div class="topbar">
+            <p>Check out the exam dates here!! </p>
+            <button>Exam Calendar</button>
+        </div>
+        <nav class="navbar">
+          <div class="logoRegister">
+            
+            <!-- <h1 id="logotext"><a href="https://www.sarkariexamjankari.in/">Sarkari_<span style="color: red;">E</span>xam</a></h1> -->
+            <img src="/static/images/logo/LogoNew4.png" alt="WebsiteLogo" style="height: 60px;">
+            <button id="registerBtnMob">
+              <a href="#">Register</a>
+            </button>
+          </div>
+          <hr id="navSeperator">
+          <div class="navbarMobileContent">
+            <ul>
+              <!-- <li class="navbarLinks"><a href="/index.html">Home</a></li> -->
+              <li class="navbarLinks"><a href="/allexams.html">Exams</a></li>
+              <li class="navbarLinks" style="text-align: center;"><a href="studyMaterial.html">Study Material</a></li>
+              <li class="navbarLinks"><a href="/schemes.html">Schemes</a></li>
+              <!-- <li class="navbarLinks"><a href="#">Blogs</a></li> -->
+              <li class="navbarLinks"><a href="#">Syllabus</a></li>
+            </ul>
+          </div>
+
+          <!-- for laptop screens -->
+          <div class="navContent">
+            <ul>
+              <!-- <li class="navbarLinks"><a href="/index.html">Home</a></li> -->
+              <li class="navbarLinks"><a href="/allexams.html">Exams </a></li>
+              <li class="navbarLinks"><a href="/studyMaterial.html">Study Material</a></li>
+              <li class="navbarLinks"><a href="/schemes.html">Schemes</a></li>
+              <!-- <li class="navbarLinks"><a href="#">Blogs</a></li> -->
+              <li class="navbarLinks"><a href="#">Syllabus</a></li>
+              <!-- <li class="navbarLinks"><a href="#">Support</a></li> -->
+            </ul>
+          </div>
+
+          <div class="header__icon-list">
+              <div class="searchbar">
+                  <input type="search">
+                  <i class="fa-brands fa-searchengin" style="color: var(--primaryColor); font-size: 1.3vw;"></i>  
+              </div>
+              <i class="fa-regular fa-user" id="profileIcon"></i>
+          </div>
+        </nav>
+      </header>
+
+<div>
+    <!-- Icon library -->
+    <link rel="preload" href="https://kit.fontawesome.com/3c8b61f835.js" as="script">
+    <script defer src="https://kit.fontawesome.com/3c8b61f835.js"></script>
+    
+</head>
+<body>
+
+<div class="dropdown-container">
+  <!-- Statewise Exams Dropdown with Search -->
+  <div class="dropdown">
+      <input type="text" id="stateSearch" placeholder="Search Statewise Schemes" onkeyup="filterDropdown('stateDropdown', 'stateSearch')" />
+      <div id="stateDropdown" class="dropdown-content">
+          <a href="state_scheme.html">Maharashtra</a>
+          <a href="state_scheme.html">Andhra Pradesh</a>
+          <a href="state_scheme.html">Haryana</a>
+          <a href="state_scheme.html">Uttar Pradesh</a>
+          <a href="state_scheme.html">Bihar</a>
+          <a href="state_scheme.html">Jharkhand</a>
+          <a href="state_scheme.html">Karnataka</a>
+          <a href="state_scheme.html">Manipur</a>
+          <a href="state_scheme.html">Sikkim</a>
+          <a href="state_scheme.html">Arunachal Pradesh</a>
+          <a href="state_scheme.html">Himachal Pradesh</a>
+          <a href="state_scheme.html">Meghalaya</a>
+          <a href="state_scheme.html">Tamil Nadu</a>
+          <a href="state_scheme.html">Assam</a>
+          <a href="state_scheme.html">Mizoram</a>
+          <a href="state_scheme.html">Telangana</a>
+      </div>
+  </div>
+
+  <!-- National Exams Dropdown with Search -->
+  <div class="dropdown">
+      <input type="text" id="nationalSearch" placeholder="Search Central Schemes" onkeyup="filterDropdown('nationalDropdown', 'nationalSearch')" />
+      <div id="nationalDropdown" class="dropdown-content">
+          <a href="national-exams.html?exam=UPSC">UPSC</a>
+          <a href="national-exams.html?exam=NDA">NDA</a>
+          <a href="national-exams.html?exam=CDS">CDS</a>
+          <a href="national-exams.html?exam=JEE">JEE</a>
+          <a href="national-exams.html?exam=JEEAdvance">JEE Advance</a>
+          <a href="national-exams.html?exam=BITSAT">BITSAT</a>
+          <a href="national-exams.html?exam=NEET">NEET</a>
+          <a href="national-exams.html?exam=NATA">NATA</a>
+          <a href="national-exams.html?exam=CLAT">CLAT</a>
+          <a href="national-exams.html?exam=AILET">AILET</a>
+          <a href="national-exams.html?exam=NIFT">NIFT Entrance</a>
+      </div>
+  </div>
+</div>
+
+ <!-- Select by Category Section -->
+<!-- Select by Category Section -->
+<div class="category">
+    <input type="text" id="categorySearch" placeholder="Select by category" readonly onclick="toggleCategoryDropdown()" />
+    <div id="categoryDropdown" class="dropdown-content" style="display: none;">
+        <ul>
+            <li onclick="showSubCategory('Farmers')">Farmers</li>
+            <li onclick="showSubCategory('Students')">Students</li>
+            <li onclick="showSubCategory('Women')">Women</li>
+            
+        </ul>
+    </div>
+</div>
+
+<div id="subCategoryDropdown" class="dropdown-content" style="display: none; margin-top: 10px;">
+    <select id="subCategorySelect">
+        <option value="">Select a sub-category</option>
+        <!-- Options will be populated dynamically -->
+    </select>
+</div>
+
+
+
+<footer>
+    <div class="footContainer">
+        <div class="footcol">
+            <h3>About SarkariExamJankari.in</h3>
+            <p><a href="https://www.sarkariexamjankari.in/" style="text-decoration: none; color: var(--secondary-color4);">SarkariExamJankari.in</a>  is your go-to source for all exam updates, including upcoming exams, admit cards, results, and more.</p>
+            <p><span style="color: var(--secondary-color4);">Navigate Your Future</span>  – Free Govt Exam Resources at Your Fingertips!</p>
+            
+        </div>
+        <div class="footcol">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/allexams.html"> Exams</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/studyMaterial.html"> Study Material</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/schemes.html"> Schemes</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/faq.html"> FAQs</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="#"> Tools</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i><a href="/contact.html"> Support</a></li>
+            </ul>
+        </div>
+        <div class="footcol">
+            <h3>Trending Exams</h3>
+            <ul>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/cds2.html">CDS</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/cgl.html">SSC CGL</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/chsl.html">SSC CHSL</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="#">SSC GD</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="/exams/indian-coast-guard-2024.html">ICG</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="#">UPSC</a></li>
+                <li><i class="fa-solid fa-angles-right" style="color: aliceblue;"></i> <a href="#">BSF</a></li>
+            </ul>
+        </div>
+        <div class="footcol">
+            <h3>Show Some Love</h3>
+            <br>
+            <h5>Follow us on:</h5>
+            <div class="footsocial">
+                <ul>
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-youtube"></a></li>
+                    <li><a href="#" class="fa fa-instagram"></a></li>
+                </ul>
+            </div>
+            <br>
+            <p><i class="fa-regular fa-envelope" style="color: aliceblue;"></i><a href="mailto:sarkariexamjankari2024@gmail.com" id="footmail"> support@sarkariexamjankari.in</a></p>
+            
+            
+        </div>
+    </div>
+</footer>
+
+    <script>
+        // Function to filter dropdown content based on search input
+        const filterDropdown = (dropdownId, searchId) => {
+            const input = document.getElementById(searchId).value.toUpperCase();
+            const dropdownItems = document.querySelectorAll(`#${dropdownId} a`);
+            dropdownItems.forEach((item) => {
+                const text = item.textContent.toUpperCase(); 
+                item.style.display = text.includes(input) ? "" : "none";
+            });
+        };
+
+// Function to toggle the category dropdown visibility
+function toggleCategoryDropdown() {
+        const categoryDropdown = document.getElementById("categoryDropdown");
+        categoryDropdown.style.display = categoryDropdown.style.display === "block" ? "none" : "block";
+    }
+
+    // Function to show the sub-category dropdown and populate it
+    function showSubCategory(category) {
+        const subCategoryDropdown = document.getElementById("subCategoryDropdown");
+        const subCategorySelect = document.getElementById("subCategorySelect");
+
+        // Clear existing options in the sub-category dropdown
+        subCategorySelect.innerHTML = '<option value="">Select a sub-category</option>';
+
+        // Populate sub-category options based on the selected category
+        if (category === "Farmers") {
+            subCategorySelect.innerHTML += `
+                <option value="farmer1">Crop Insurance</option>
+                <option value="farmer2">Subsidies</option>
+                <option value="farmer3">Farming Equipment Loans</option>
+            `;
+        } else if (category === "Students") {
+            subCategorySelect.innerHTML += `
+                <option value="student1">Scholarships</option>
+                <option value="student2">Internships</option>
+                <option value="student3">Educational Loans</option>
+            `;
+        } else if (category === "Women") {
+            subCategorySelect.innerHTML += `
+                <option value="women1">Women Entrepreneurship Programs</option>
+                <option value="women2">Healthcare Support</option>
+                <option value="women3">Skill Development</option>
+            `;
+        }
+
+        // Display the sub-category dropdown
+        subCategoryDropdown.style.display = "block";
+    }
+    </script>
+</body>
+</html>
